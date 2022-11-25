@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    #?????SQL??
+    #    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #    ?????
+  type-aliases-package: com/example/demo/pojo
+
+  #  ???????resources??mapper?????????????classpath*:/mapper/**/*.xml
+  mapper-locations: classpath*:/mapper/**/*.xml
