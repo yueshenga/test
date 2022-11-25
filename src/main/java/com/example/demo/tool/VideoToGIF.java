@@ -73,17 +73,11 @@ public class VideoToGIF {
     public static void batchTransform(String sourceFolderPath, String targetFolderPath) {
         File sourceFolder = new File(sourceFolderPath);
         System.out.println("sourceFolder = " + sourceFolder);
-//        if (Objects.requireNonNull(sourceFolder.list()).length != 0) {
-//            Arrays.asList(Objects.requireNonNull(sourceFolder.list())).forEach(e -> {
-//                transform(sourceFolderPath + "\\" + e, targetFolderPath + "\\" + getNewFileName(e));
-//            });
-//        }
         if (sourceFolder.list().length != 0) {
             Arrays.asList(sourceFolder.list()).forEach(e -> {
                 transform(sourceFolderPath + "\\" + e, targetFolderPath + "\\" + getNewFileName(e));
             });
         }
-//        transform(sourceFolderPath ,  targetFolderPath);
     }
 
     public static void main(String[] args) {
