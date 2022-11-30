@@ -126,7 +126,12 @@
             <artifactId>jave-all-deps</artifactId>
             <version>3.0.1</version>
         </dependency>
-
+        <!--  敏感词过滤  -->
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-word</artifactId>
+            <version>0.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
