@@ -8,15 +8,24 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+#  task:
+#    scheduling:
+#      pool:
+#        max-size: 2  #task线程池最大大小
+#        keep-alive: 100s
+#        allow-core-thread-timeout: true
+#      thread-name-prefix: Spring_task_  #调度线程名前缀，默认为：scheduling_
+#        # shutdown:
+#        # await-termination: false  #线程池关闭时是否等待所有任务完成
+#      # await-termination-period: 20s #调度线程前关闭前的最大等待时间
+#      shutdown:
+#        await-termination-period: 100s
+#        await-termination: false
 
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
-    #?????SQL??
     #    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
   #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  #    ?????
   type-aliases-package: com/example/demo/pojo
-
-  #  ???????resources??mapper?????????????classpath*:/mapper/**/*.xml
   mapper-locations: classpath*:/mapper/**/*.xml
