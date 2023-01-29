@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.demo;
 
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.ToAnalysis;
