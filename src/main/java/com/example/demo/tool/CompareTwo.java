@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 /*
-* * 对比两边数据差异
+* * 对比两边文本数据差异
 */
-public class ReadByTxt {
+public class CompareTwo {
 
     static final String path1 = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\text.txt";
 
