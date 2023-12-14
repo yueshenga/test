@@ -52,10 +52,6 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
         <!--  lombok  -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -118,11 +114,11 @@
             <artifactId>animated-gif-lib</artifactId>
             <version>1.4</version>
         </dependency>
-        <!-- 图片合成GIF: 任选其一 -->
+        <!-- hutool-all 工具类 -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.0.6</version>
+            <version>5.8.19</version>
         </dependency>
         <!--  视频生成GIF  -->
         <dependency>
