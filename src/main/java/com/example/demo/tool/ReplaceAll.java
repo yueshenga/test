@@ -12,9 +12,10 @@ import java.util.regex.Pattern;
 */
 public class ReplaceAll {
     public static void main(String[] args) {
-        String filePath = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\bak.txt"; // 替换为你的txt文件路径
-        String searchString = ","; // 要替换的文本
-        String replacementString = ",\n"; // 替换后的文本，包含回车符
+        //\r回车 \n换行
+        String filePath = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\bak1.txt"; // 替换为你的txt文件路径
+        String searchString = "\n"; // 要替换的文本
+        String replacementString = ""; // 替换后的文本，包含回车符
 
         try {
             // 读取文件内容

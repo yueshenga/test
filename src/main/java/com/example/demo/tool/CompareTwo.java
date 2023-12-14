@@ -12,9 +12,9 @@ import java.util.Set;
 */
 public class CompareTwo {
 
-    static final String path1 = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\text.txt";
+    static final String path1 = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\bak2.txt";
 
-    static final String path2 = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\bak.txt";
+    static final String path2 = "D:\\myworkplace\\test\\src\\main\\resources\\static\\other\\bak1.txt";
 
     public static void main(String[] args) {
         FileReader textFileReader;
@@ -41,11 +41,13 @@ public class CompareTwo {
         Set<Integer> bakSet = new HashSet<>(bakList);
         List<Integer> bakUniqueList = new ArrayList<>(bakSet);
 
-        System.out.println("原始列表数据量： " + textList.size());
-        System.out.println("去重后的列表数据量： " + textUniqueList.size());
-        textUniqueList.removeAll(bakUniqueList);
-        System.out.println("bakList = " + bakList.size());
-        System.out.println("剩余的单位：" + textUniqueList);
+        System.out.println("原始列表数据量textList:" + textList.size());
+//        System.out.println("去重后的列表数据量： " + textUniqueList.size());
+//        textUniqueList.removeAll(bakUniqueList);
+        System.out.println("原始列表数据量bakList:" + bakList.size());
+//        System.out.println("大集合中除去小集合的其他数据 : " + textUniqueList);
 
+        boolean all = textUniqueList.containsAll(bakUniqueList);
+        System.out.println("大集合是否包含小集合 : " + all);
     }
 }
